@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="APPOceanicAzores.Views.Signup">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="40,40,40,40" VerticalOptions="Center">
+                <Frame CornerRadius="10" BackgroundColor="Transparent" Margin="0" HeightRequest="200" WidthRequest="200">
+                    <Image Source="OCEANIC_logo_back.png"></Image>
+                </Frame>
+                <StackLayout>
+                    <Frame BackgroundColor="LightGray" BorderColor="Black" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                        <Entry Margin="15,0,15,0" FontSize="Body" Placeholder="Username" x:Name="EntryUserName"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame BackgroundColor="LightGray" BorderColor="Black" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                        <Entry Margin="15,0,15,0" FontSize="Body" Placeholder="Password" IsPassword="True" x:Name="EntryUserPassword"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame BackgroundColor="LightGray" BorderColor="Black" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                        <Entry Margin="15,0,15,0" FontSize="Body" Placeholder="Email" x:Name="EntryUserEmail"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame BackgroundColor="LightGray" BorderColor="Black" Padding="0" Margin="0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                        <Entry Margin="15,0,15,0" FontSize="Body" Placeholder="Phone Number" x:Name="EntryUserPhoneNumber"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="70,20,70,0" HorizontalOptions="Center" Orientation="Horizontal">
+                    <Button Text="Register" BackgroundColor="#0077be" CornerRadius="20" TextColor="White" Clicked="Register_Clicked"/>
+                    <Button Text="Back" BackgroundColor="#0077be" CornerRadius="20" TextColor="White" Clicked="Back_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
